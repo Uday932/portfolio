@@ -1,0 +1,29 @@
+{
+  "education": [
+    {
+      "name": "Sup de Vinci",
+      "href": "https://www.supdevinci.fr/",
+      "title": "Bachelor's Degree in Software Development",
+      "logo": "/sdv.png",
+      "start": "Sep 2024",
+      "end": "Jul 2025",
+      "description": [
+        "Currently enrolled in a Bachelor's degree program in Software Development at Sup de Vinci, focusing on advanced software engineering principles and practices."
+      ],
+      "links": [
+
+      ]
+    },
+    {
+      "name": "Lycée Voillaume",
+      "href": "https://www.lyceevoillaume.fr/",
+      "title": "BTS Service Informatique aux Organisations option SLAM",
+      "logo": "/voillaume.png",
+      "start": "Sep 2022",
+      "end": "Jul 2024",
+      "links": [
+
+      ]
+    }
+  ]
+}

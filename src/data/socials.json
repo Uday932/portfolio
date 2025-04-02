@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://linkedin.com/in/uday-bhavsar",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Uday932",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:uday.bhavsar.sio@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}

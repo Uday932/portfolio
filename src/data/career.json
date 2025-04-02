@@ -1,0 +1,24 @@
+{
+  "career": [
+    {
+      "name": "Event Catalyst",
+      "href": "https://www.eventcatalyst.com",
+      "title": "Web Developer (Intern)",
+      "logo": "/ec.png",
+      "start": "Jan 2024",
+      "end": "Mar 2024",
+      "description": [
+      ]
+    },
+    {
+      "name": "Zenconnect",
+      "href": "https://zenconnect.fr",
+      "title": "Wordpress Developer (Intern)",
+      "logo": "/zenconnect.png",
+      "start": "May 2023",
+      "end": "June 2023",
+      "description": [
+      ]
+    }
+  ]
+}
