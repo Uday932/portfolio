@@ -1,10 +1,12 @@
-interface ContactFormEmailProps {
+import React from "react";
+
+export interface ContactFormEmailProps {
   name: string;
   email: string;
   message: string;
 }
 
-const ContactFormEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
+const ContactFormEmail: React.FC<ContactFormEmailProps> = ({
   name,
   email,
   message,

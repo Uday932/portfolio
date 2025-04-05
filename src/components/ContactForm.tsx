@@ -10,7 +10,6 @@ import { z } from "zod";
 import { Button } from "./ui/Button";
 import { Input } from "./ui/Input";
 import { Textarea } from "./ui/Textarea";
-import Link from "next/link";
 
 type Inputs = z.infer<typeof ContactFormSchema>;
 
@@ -30,15 +29,25 @@ export default function ContactForm() {
   });
 
   const processForm: SubmitHandler<Inputs> = async (data) => {
-    const result = await sendEmail(data);
+    try {
+      const formData = new FormData();
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("message", data.message);
 
-    if (result.error) {
-      toast.error("An error occurred! Please try again later.");
-      return;
+      const result = await sendEmail(formData);
+
+      if (result.error) {
+        toast.error("An error occurred! Please try again later.");
+        return;
+      }
+
+      toast.success("Message sent successfully!");
+      reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("An unexpected error occurred! Please try again later.");
     }
-
-    toast.success("Message sent successfully!");
-    reset();
   };
 
   return (
@@ -67,7 +76,6 @@ export default function ContactForm() {
             autoComplete="email"
             {...register("email")}
           />
-
           {errors.email?.message && (
             <p className="input-error">{errors.email.message}</p>
           )}
@@ -82,7 +90,6 @@ export default function ContactForm() {
             className="resize-none"
             {...register("message")}
           />
-
           {errors.message?.message && (
             <p className="input-error">{errors.message.message}</p>
           )}
