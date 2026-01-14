@@ -1,5 +1,46 @@
 {
   "projects": [
-
+    {
+      "name": "E-commerce Platform for SaaS Security Solutions",
+      "description": "Development of a mobile-first e-commerce platform for Cyna, offering cybersecurity SaaS solutions (SOC, EDR, XDR). Features include product browsing, shopping cart, checkout system, user account management, and admin backoffice.",
+      "image": "/cyna.png",
+      "tags": [
+        "Next.js",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Prisma",
+        "Stripe"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://cyna-lime.vercel.app/",
+          "icon": "globe"
+        },
+        {
+          "name": "Github",
+          "href": "https://github.com/Uday932/cyna/tree/dev",
+          "icon": "github"
+        }
+      ]
+    }
+    ,
+    {
+      "name": "Medication management application in C# with WinForms",
+      "description": "A desktop application for managing medications, including features like adding, editing, and deleting medications, as well as tracking medication schedules. The application uses a SQL Server database for data storage.",
+      "image": "/gsb.png",
+      "tags": [
+        "C#",
+        "WinForms",
+        "SQL Server"
+      ],
+      "links": [
+        {
+          "name": "Github",
+          "href": "https://github.com/Uday932/gsbRapports",
+          "icon": "github"
+        }
+      ]
+    }
   ]
 }

@@ -1,9 +1,18 @@
 "use server";
 
 import { ContactFormSchema } from "@/lib/schemas";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Configure Nodemailer with Brevo SMTP
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: false, // TLS
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export async function sendEmail(formData: FormData) {
   const parsedData = ContactFormSchema.safeParse({
@@ -19,17 +28,16 @@ export async function sendEmail(formData: FormData) {
   const { name, email, message } = parsedData.data;
 
   try {
-    const { data, error } = await resend.emails.send({
-      from: `Uday BHAVSAR <hello@resend.dev>`,
+    const info = await transporter.sendMail({
+      from: '"Uday BHAVSAR" <uday.bhavsar.sio@gmail.com>',
       to: "uday.bhavsar.sio@gmail.com",
-      replyTo: [email],
-      cc: [email],
+      cc: email,
+      replyTo: email,
       subject: `New message from ${name}!`,
       text: `Name:\n${name}\n\nEmail:\n${email}\n\nMessage:\n${message}`,
     });
 
-    if (error) throw new Error(error.message);
-
+    console.log("Email sent:", info.messageId);
     return { success: true };
   } catch (error) {
     console.error("Email sending error:", error);

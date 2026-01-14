@@ -1,29 +1,37 @@
 {
   "education": [
     {
+      "name": "IPSSI",
+      "href": "https://ecole-ipssi.com/",
+      "title": "Bachelor's Degree in Software Development and AI",
+      "logo": "/ipssi.png",
+      "start": "Mar 2026",
+      "end": "Mar 2027",
+      "description": [
+        " Pursuing a Bachelor's degree program in Software Development and Artificial Intelligence at IPSSI, focusing on cutting-edge technologies and AI applications."
+      ],
+      "links": []
+    },
+    {
       "name": "Sup de Vinci",
       "href": "https://www.supdevinci.fr/",
       "title": "Bachelor's Degree in Software Development",
       "logo": "/sdv.png",
       "start": "Sep 2024",
-      "end": "Jul 2025",
+      "end": "Feb 2025",
       "description": [
-        "Currently enrolled in a Bachelor's degree program in Software Development at Sup de Vinci, focusing on advanced software engineering principles and practices."
+        " Did an Bachelor's degree program in Software Development at Sup de Vinci, focusing on advanced software engineering principles and practices."
       ],
-      "links": [
-
-      ]
+      "links": []
     },
     {
       "name": "Lycée Voillaume",
       "href": "https://www.lyceevoillaume.fr/",
-      "title": "BTS Service Informatique aux Organisations option SLAM",
+      "title": "Higher National Diploma in Information Systems Services - Software Solutions",
       "logo": "/voillaume.png",
       "start": "Sep 2022",
       "end": "Jul 2024",
-      "links": [
-
-      ]
+      "links": []
     }
   ]
 }

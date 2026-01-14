@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     console.log("Sending email with data:", { name, email, message }); // Log temporaire
 
     const { data, error } = await resend.emails.send({
-      from: `Uday BHAVSAR <uday.bhavsar.sio@gmail.com>`,
+      from: "Uday BHAVSAR <onboarding@resend.dev>", // Utilisez votre domaine vérifié ou l'adresse par défaut Resend
       to: "uday.bhavsar.sio@gmail.com",
       replyTo: [email],
       cc: [email],

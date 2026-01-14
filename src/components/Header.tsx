@@ -18,11 +18,11 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-background/80 py-6 backdrop-blur-md border-b border-border/40">
       <nav className="flex items-center justify-between">
-        <ul className="flex gap-4 sm:gap-8">
+        <ul className="flex gap-6 sm:gap-10">
           {navLinks.map((nav, id) => (
-            <li key={id} className="link">
+            <li key={id} className="link font-medium">
               <Link href={nav.href}>{nav.name}</Link>
             </li>
           ))}

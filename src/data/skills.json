@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "name": "React.js",
+      "description": "JavaScript Library",
+      "icon": "/skills/react.png"
+    },
+    {
+      "name": "Typescript",
+      "description": "JavaScript but better",
+      "icon": "/skills/typescript.png"
+    },
+    {
+      "name": "C#",
+      "description": "Powerful Backend & Desktop Language",
+      "icon": "/skills/csharp.png"
+    },
+    {
+      "name": "Java",
+      "description": "Powerful Backend Language",
+      "icon": "/skills/java.png"
+    },
+    {
+      "name": "Node.js",
+      "description": "JavaScript Runtime",
+      "icon": "/skills/nodejs.png"
+    },
+    {
+      "name": "PostgreSQL",
+      "description": "Relational Database",
+      "icon": "/skills/postgresql.png"
+    }
+  ]
+}
