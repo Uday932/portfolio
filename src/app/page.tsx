@@ -37,7 +37,7 @@ export default async function Home() {
             I like to develop full-stack apps and being a part-time musician{" "}
           </p>
           <section className="mt-8 flex items-center gap-6">
-            <Link href="/resume.pdf" target="_blank">
+            <Link href="/uday-bhavsar-cv.pdf" target="_blank">
               <Button variant="outline" className="transition-all hover:scale-105">
                 <span className="font-semibold">Resume</span>
                 <FileDown className="ml-2 size-5" />
