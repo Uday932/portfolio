@@ -1,10 +1,15 @@
 "use client";
 
-import skillsData from "@/data/skills.json";
+import { useLanguage } from "@/contexts/LanguageContext";
+import skillsDataEn from "@/data/skills.json";
+import skillsDataFr from "@/data/skills_fr.json";
 import SkillCard from "@/components/SkillCard";
 import { skillsSchema } from "@/lib/schemas";
 
 export default function Skills() {
+  const { locale } = useLanguage();
+  const skillsData = locale === "fr" ? skillsDataFr : skillsDataEn;
+
   try {
     const parsed = skillsSchema.parse(skillsData);
 
@@ -27,3 +32,4 @@ export default function Skills() {
     return <p>Erreur de chargement des compétences.</p>;
   }
 }
+

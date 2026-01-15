@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "home",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "home": {
+    "greeting": "hi uday here 👋",
+    "age": "-year-old software developer from Paris",
+    "description": "I like to develop full-stack apps and being a part-time musician",
+    "resume": "Resume",
+    "skills": "skills",
+    "featuredProjects": "featured projects",
+    "viewMore": "view more"
+  },
+  "projects": {
+    "title": "my projects."
+  },
+  "contact": {
+    "title": "contact me.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred! Please try again later.",
+    "unexpectedError": "An unexpected error occurred! Please try again later."
+  },
+  "experience": {
+    "work": "Work",
+    "education": "Education"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "page not found",
+    "description": "The page you are looking for might have been removed or is temporarily unavailable.",
+    "backHome": "back to home"
+  },
+  "language": {
+    "toggle": "Language Toggle"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "accueil",
+    "projects": "projets",
+    "contact": "contact"
+  },
+  "home": {
+    "greeting": "salut, c'est uday 👋",
+    "age": " ans, développeur full-stack basé à Paris",
+    "description": "J'aime développer des applications full-stack et être musicien à temps partiel",
+    "resume": "CV",
+    "skills": "compétences",
+    "featuredProjects": "projets en vedette",
+    "viewMore": "voir plus"
+  },
+  "projects": {
+    "title": "mes projets."
+  },
+  "contact": {
+    "title": "contactez-moi.",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Une erreur s'est produite ! Veuillez réessayer plus tard.",
+    "unexpectedError": "Une erreur inattendue s'est produite ! Veuillez réessayer plus tard."
+  },
+  "experience": {
+    "work": "Expérience",
+    "education": "Formation"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "page introuvable",
+    "description": "La page que vous recherchez a peut-être été supprimée ou est temporairement indisponible.",
+    "backHome": "retour à l'accueil"
+  },
+  "language": {
+    "toggle": "Changer de langue"
+  }
+}

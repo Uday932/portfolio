@@ -1,4 +1,8 @@
-import data from "@/data/projects.json";
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
+import dataEn from "@/data/projects.json";
+import dataFr from "@/data/projects_fr.json";
 import { projectSchema } from "@/lib/schemas";
 import { ProjectCard } from "./ProjectCard";
 
@@ -7,6 +11,9 @@ interface Props {
 }
 
 export default function Projects({ limit }: Props) {
+  const { locale } = useLanguage();
+  const data = locale === "fr" ? dataFr : dataEn;
+
   let projects = projectSchema.parse(data).projects;
   if (limit) {
     projects = projects.slice(0, limit);
@@ -20,3 +27,4 @@ export default function Projects({ limit }: Props) {
     </section>
   );
 }
+

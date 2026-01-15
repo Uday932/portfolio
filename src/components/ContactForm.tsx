@@ -1,5 +1,6 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import { sendEmail } from "@/lib/actions";
 import { ContactFormSchema } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -14,6 +15,7 @@ import { Textarea } from "./ui/Textarea";
 type Inputs = z.infer<typeof ContactFormSchema>;
 
 export default function ContactForm() {
+  const { t } = useLanguage();
   const {
     register,
     handleSubmit,
@@ -38,15 +40,15 @@ export default function ContactForm() {
       const result = await sendEmail(formData);
 
       if (result.error) {
-        toast.error("An error occurred! Please try again later.");
+        toast.error(t("contact.error"));
         return;
       }
 
-      toast.success("Message sent successfully!");
+      toast.success(t("contact.success"));
       reset();
     } catch (error) {
       console.error("Error submitting form:", error);
-      toast.error("An unexpected error occurred! Please try again later.");
+      toast.error(t("contact.unexpectedError"));
     }
   };
 
@@ -58,7 +60,7 @@ export default function ContactForm() {
           <Input
             id="name"
             type="text"
-            placeholder="Name"
+            placeholder={t("contact.name")}
             autoComplete="given-name"
             {...register("name")}
           />
@@ -72,7 +74,7 @@ export default function ContactForm() {
           <Input
             id="email"
             type="email"
-            placeholder="Email"
+            placeholder={t("contact.email")}
             autoComplete="email"
             {...register("email")}
           />
@@ -85,7 +87,7 @@ export default function ContactForm() {
         <div className="h-32 sm:col-span-2">
           <Textarea
             rows={4}
-            placeholder="Message"
+            placeholder={t("contact.message")}
             autoComplete="Message"
             className="resize-none"
             {...register("message")}
@@ -103,12 +105,12 @@ export default function ContactForm() {
         >
           {isSubmitting ? (
             <div className="flex items-center">
-              <span>Sending...</span>
+              <span>{t("contact.sending")}</span>
               <ReloadIcon className="ml-2 animate-spin" />
             </div>
           ) : (
             <div className="flex items-center">
-              <span>Send Message</span>
+              <span>{t("contact.send")}</span>
               <PaperPlaneIcon className="ml-2" />
             </div>
           )}
@@ -117,3 +119,4 @@ export default function ContactForm() {
     </form>
   );
 }
+

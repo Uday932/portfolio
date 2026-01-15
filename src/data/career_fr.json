@@ -1,0 +1,22 @@
+{
+  "career": [
+    {
+      "name": "Event Catalyst",
+      "href": "https://www.eventcatalyst.com",
+      "title": "Développeur Web (Stage)",
+      "logo": "/ec.png",
+      "start": "Jan 2024",
+      "end": "Mar 2024",
+      "description": []
+    },
+    {
+      "name": "Zenconnect",
+      "href": "https://zenconnect.fr",
+      "title": "Développeur Wordpress (Stage)",
+      "logo": "/zenconnect.png",
+      "start": "Mai 2023",
+      "end": "Juin 2023",
+      "description": []
+    }
+  ]
+}

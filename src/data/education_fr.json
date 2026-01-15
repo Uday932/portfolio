@@ -1,0 +1,37 @@
+{
+  "education": [
+    {
+      "name": "IPSSI",
+      "href": "https://ecole-ipssi.com/",
+      "title": "Bachelor en Développement Logiciel et IA",
+      "logo": "/ipssi.png",
+      "start": "Mar 2026",
+      "end": "Mar 2027",
+      "description": [
+        "Poursuite d'un Bachelor en Développement Logiciel et Intelligence Artificielle à l'IPSSI, axé sur les technologies de pointe et les applications IA."
+      ],
+      "links": []
+    },
+    {
+      "name": "Sup de Vinci",
+      "href": "https://www.supdevinci.fr/",
+      "title": "Bachelor en Développement Logiciel",
+      "logo": "/sdv.png",
+      "start": "Sep 2024",
+      "end": "Fév 2025",
+      "description": [
+        "Bachelor en Développement Logiciel à Sup de Vinci, axé sur les principes avancés d'ingénierie logicielle."
+      ],
+      "links": []
+    },
+    {
+      "name": "Lycée Voillaume",
+      "href": "https://www.lyceevoillaume.fr/",
+      "title": "BTS Services Informatiques aux Organisations -  Solutions logicielles et applications métiers",
+      "logo": "/voillaume.png",
+      "start": "Sep 2022",
+      "end": "Juil 2024",
+      "links": []
+    }
+  ]
+}

@@ -1,22 +1,28 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
 import Link from "next/link";
+import LanguageToggle from "./LanguageToggle";
 import ThemeToggle from "./ThemeToggle";
 
-const navLinks = [
-  {
-    name: "home",
-    href: "/",
-  },
-  {
-    name: "projects",
-    href: "/projects",
-  },
-  {
-    name: "contact",
-    href: "/contact",
-  },
-];
-
 export default function Header() {
+  const { t } = useLanguage();
+
+  const navLinks = [
+    {
+      name: t("nav.home"),
+      href: "/",
+    },
+    {
+      name: t("nav.projects"),
+      href: "/projects",
+    },
+    {
+      name: t("nav.contact"),
+      href: "/contact",
+    },
+  ];
+
   return (
     <header className="sticky top-0 z-50 bg-background/80 py-6 backdrop-blur-md border-b border-border/40">
       <nav className="flex items-center justify-between">
@@ -28,9 +34,11 @@ export default function Header() {
           ))}
         </ul>
         <div className="flex gap-0 sm:gap-4">
+          <LanguageToggle />
           <ThemeToggle />
         </div>
       </nav>
     </header>
   );
 }
+

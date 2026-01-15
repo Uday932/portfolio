@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "name": "React.js",
+      "description": "Bibliothèque JavaScript",
+      "icon": "/skills/react.png"
+    },
+    {
+      "name": "Typescript",
+      "description": "JavaScript amélioré",
+      "icon": "/skills/typescript.png"
+    },
+    {
+      "name": "C#",
+      "description": "Langage Backend & Desktop puissant",
+      "icon": "/skills/csharp.png"
+    },
+    {
+      "name": "Java",
+      "description": "Langage Backend puissant",
+      "icon": "/skills/java.png"
+    },
+    {
+      "name": "Node.js",
+      "description": "Environnement d'exécution JavaScript",
+      "icon": "/skills/nodejs.png"
+    },
+    {
+      "name": "PostgreSQL",
+      "description": "Base de données relationnelle",
+      "icon": "/skills/postgresql.png"
+    }
+  ]
+}
