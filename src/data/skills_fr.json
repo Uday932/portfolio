@@ -1,34 +1,139 @@
 {
-  "skills": [
+  "categories": [
     {
-      "name": "React.js",
-      "description": "Bibliothèque JavaScript",
-      "icon": "/skills/react.png"
+      "id": "languages",
+      "name": "Langages",
+      "icon": "Code",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "description": "Langage de script dynamique",
+          "icon": "/skills/javascript.svg"
+        },
+        {
+          "name": "TypeScript",
+          "description": "JavaScript amélioré",
+          "icon": "/skills/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "description": "Langage Backend puissant",
+          "icon": "/skills/java.svg"
+        },
+        {
+          "name": "C#",
+          "description": "Langage Backend & Desktop",
+          "icon": "/skills/csharp.svg"
+        },
+        {
+          "name": "Python",
+          "description": "Polyvalent & facile à apprendre",
+          "icon": "/skills/python.svg"
+        }
+      ]
     },
     {
-      "name": "Typescript",
-      "description": "JavaScript amélioré",
-      "icon": "/skills/typescript.png"
+      "id": "frontend",
+      "name": "Frontend",
+      "icon": "Layout",
+      "skills": [
+        {
+          "name": "React",
+          "description": "Bibliothèque JavaScript",
+          "icon": "/skills/react.svg"
+        },
+        {
+          "name": "Next.js",
+          "description": "Framework React",
+          "icon": "/skills/nextjs.svg"
+        },
+        {
+          "name": "HTML5",
+          "description": "Langage de balisage",
+          "icon": "/skills/html.svg"
+        },
+        {
+          "name": "CSS3",
+          "description": "Langage de style",
+          "icon": "/skills/css.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "CSS utilitaire",
+          "icon": "/skills/tailwind.svg"
+        }
+      ]
     },
     {
-      "name": "C#",
-      "description": "Langage Backend & Desktop puissant",
-      "icon": "/skills/csharp.png"
+      "id": "backend",
+      "name": "Backend",
+      "icon": "Server",
+      "skills": [
+        {
+          "name": "Laravel",
+          "description": "Framework PHP",
+          "icon": "/skills/laravel.svg"
+        },
+        {
+          "name": "Node.js",
+          "description": "Environnement JavaScript",
+          "icon": "/skills/nodejs.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "description": "Framework Java",
+          "icon": "/skills/spring.svg"
+        }
+      ]
     },
     {
-      "name": "Java",
-      "description": "Langage Backend puissant",
-      "icon": "/skills/java.png"
+      "id": "databases",
+      "name": "Bases de données",
+      "icon": "Database",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "description": "Base relationnelle",
+          "icon": "/skills/postgresql.svg"
+        },
+        {
+          "name": "MongoDB",
+          "description": "Base NoSQL",
+          "icon": "/skills/mongodb.svg"
+        },
+        {
+          "name": "MySQL",
+          "description": "Base relationnelle",
+          "icon": "/skills/mysql.svg"
+        }
+      ]
     },
     {
-      "name": "Node.js",
-      "description": "Environnement d'exécution JavaScript",
-      "icon": "/skills/nodejs.png"
-    },
-    {
-      "name": "PostgreSQL",
-      "description": "Base de données relationnelle",
-      "icon": "/skills/postgresql.png"
+      "id": "devops",
+      "name": "DevOps & Outils",
+      "icon": "Wrench",
+      "skills": [
+        {
+          "name": "Git",
+          "description": "Contrôle de version",
+          "icon": "/skills/git.svg"
+        },
+        {
+          "name": "Docker",
+          "description": "Conteneurisation",
+          "icon": "/skills/docker.svg"
+        },
+        {
+          "name": "GitHub Actions",
+          "description": "Pipeline CI/CD",
+          "icon": "/skills/github.svg"
+        },
+        {
+          "name": "Linux",
+          "description": "Système d'exploitation",
+          "icon": "/skills/linux.svg"
+        }
+      ]
     }
   ]
 }

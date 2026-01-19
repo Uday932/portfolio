@@ -1,34 +1,141 @@
 {
-  "skills": [
+
+
+  "categories": [
     {
-      "name": "React.js",
-      "description": "JavaScript Library",
-      "icon": "/skills/react.png"
+      "id": "languages",
+      "name": "Languages",
+      "icon": "Code",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "description": "Dynamic Scripting Language",
+          "icon": "/skills/javascript.svg"
+        },
+        {
+          "name": "TypeScript",
+          "description": "JavaScript but better",
+          "icon": "/skills/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "description": "Powerful Backend Language",
+          "icon": "/skills/java.svg"
+        },
+        {
+          "name": "C#",
+          "description": "Backend & Desktop Language",
+          "icon": "/skills/csharp.svg"
+        },
+        {
+          "name": "Python",
+          "description": "Versatile & Easy to Learn",
+          "icon": "/skills/python.svg"
+        }
+      ]
     },
     {
-      "name": "Typescript",
-      "description": "JavaScript but better",
-      "icon": "/skills/typescript.png"
+      "id": "frontend",
+      "name": "Frontend",
+      "icon": "Layout",
+      "skills": [
+        {
+          "name": "React",
+          "description": "JavaScript Library",
+          "icon": "/skills/react.svg"
+        },
+        {
+          "name": "Next.js",
+          "description": "React Framework",
+          "icon": "/skills/nextjs.svg"
+        },
+        {
+          "name": "HTML5",
+          "description": "Markup Language",
+          "icon": "/skills/html.svg"
+        },
+        {
+          "name": "CSS3",
+          "description": "Styling Language",
+          "icon": "/skills/css.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS",
+          "icon": "/skills/tailwind.svg"
+        }
+      ]
     },
     {
-      "name": "C#",
-      "description": "Powerful Backend & Desktop Language",
-      "icon": "/skills/csharp.png"
+      "id": "backend",
+      "name": "Backend",
+      "icon": "Server",
+      "skills": [
+        {
+          "name": "Laravel",
+          "description": "Framework PHP",
+          "icon": "/skills/laravel.svg"
+        },
+        {
+          "name": "Node.js",
+          "description": "JavaScript Runtime",
+          "icon": "/skills/nodejs.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "description": "Java Framework",
+          "icon": "/skills/spring.svg"
+        }
+      ]
     },
     {
-      "name": "Java",
-      "description": "Powerful Backend Language",
-      "icon": "/skills/java.png"
+      "id": "databases",
+      "name": "Databases",
+      "icon": "Database",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "description": "Relational Database",
+          "icon": "/skills/postgresql.svg"
+        },
+        {
+          "name": "MongoDB",
+          "description": "NoSQL Database",
+          "icon": "/skills/mongodb.svg"
+        },
+        {
+          "name": "MySQL",
+          "description": "Relational Database",
+          "icon": "/skills/mysql.svg"
+        }
+      ]
     },
     {
-      "name": "Node.js",
-      "description": "JavaScript Runtime",
-      "icon": "/skills/nodejs.png"
-    },
-    {
-      "name": "PostgreSQL",
-      "description": "Relational Database",
-      "icon": "/skills/postgresql.png"
+      "id": "devops",
+      "name": "DevOps & Tools",
+      "icon": "Wrench",
+      "skills": [
+        {
+          "name": "Git",
+          "description": "Version Control",
+          "icon": "/skills/git.svg"
+        },
+        {
+          "name": "Docker",
+          "description": "Containerization",
+          "icon": "/skills/docker.svg"
+        },
+        {
+          "name": "GitHub Actions",
+          "description": "CI/CD Pipeline",
+          "icon": "/skills/github.svg"
+        },
+        {
+          "name": "Linux",
+          "description": "Operating System",
+          "icon": "/skills/linux.svg"
+        }
+      ]
     }
   ]
 }

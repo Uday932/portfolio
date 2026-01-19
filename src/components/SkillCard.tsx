@@ -4,8 +4,9 @@ import Image from "next/image";
 interface SkillCardProps {
   name: string;
   description: string;
-  icon: string; // chemin vers l'image ex: /icons/react.svg
+  icon: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export default function SkillCard({
@@ -13,6 +14,7 @@ export default function SkillCard({
   description,
   icon,
   className,
+  style,
 }: SkillCardProps) {
   return (
     <div
@@ -20,6 +22,7 @@ export default function SkillCard({
         "group flex items-center gap-4 rounded-xl border border-border/50 bg-card/50 p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-border hover:-translate-y-0.5 backdrop-blur-sm",
         className,
       )}
+      style={style}
     >
       <div className="relative size-12 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
         <Image
