@@ -39,7 +39,12 @@
           "name": "Github",
           "href": "https://github.com/Uday932/gsbRapports",
           "icon": "github"
-        }
+        },
+        {
+          "name": "Project report",
+          "href": "/projet_GSB3.pdf",
+          "icon": "file-text"
+        } 
       ]
     }
   ]

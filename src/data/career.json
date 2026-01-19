@@ -8,6 +8,9 @@
       "start": "Jan 2024",
       "end": "Mar 2024",
       "description": [
+        "Led the migration of a web application to Angular 17, significantly improving rendering performance and code maintainability.",
+        "Designed and authored a comprehensive migration and deployment guide (CI/CD), now used as the internal standard for future software updates.",
+        "Demonstrated high learning agility by mastering the Angular ecosystem through intensive self-study to meet project deadlines."
       ]
     },
     {
@@ -18,7 +21,17 @@
       "start": "May 2023",
       "end": "June 2023",
       "description": [
-      ]
+        "Developed custom automation scripts for secure file backups, ensuring the integrity and availability of critical server data.",
+        "Built a secure password generation tool compliant with modern cryptographic complexity standards.",
+        "Managed and enhanced digital presence via WordPress, focusing on SEO best practices and user engagement."
+      ],
+      "links": [
+        {
+          "name": "Site Web",
+          "href": "https://zencyber.fr",
+          "icon": "globe"
+        }
+      ] 
     }
   ]
 }

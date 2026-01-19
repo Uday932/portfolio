@@ -15,7 +15,7 @@ export const ContactFormSchema = z.object({
 
 const iconLink = z.object({
   name: z.string(),
-  href: z.string().url(),
+  href: z.string(), // Accepte URLs et chemins relatifs
   icon: z.custom<keyof typeof dynamicIconImports>(),
 });
 export type IconLink = z.infer<typeof iconLink>;
@@ -43,16 +43,25 @@ const experience = z.object({
 });
 export type Experience = z.infer<typeof experience>;
 
-export const skillsSchema = z.object({
-  skills: z.array(
-    z.object({
-      name: z.string(),
-      icon: z.string(),
-      description: z.string(),
-      
-    }),
-  ),
+const skill = z.object({
+  name: z.string(),
+  icon: z.string(),
+  description: z.string(),
 });
+
+const skillCategory = z.object({
+  id: z.string(),
+  name: z.string(),
+  icon: z.string(),
+  skills: z.array(skill),
+});
+
+export const skillsSchema = z.object({
+  categories: z.array(skillCategory),
+});
+
+export type Skill = z.infer<typeof skill>;
+export type SkillCategory = z.infer<typeof skillCategory>;
 
 
 export const careerSchema = z.object({ career: z.array(experience) });

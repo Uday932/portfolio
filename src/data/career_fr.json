@@ -7,7 +7,11 @@
       "logo": "/ec.png",
       "start": "Jan 2024",
       "end": "Mar 2024",
-      "description": []
+      "description": [
+        "Pilotage de la migration d'une application vers Angular 17, améliorant significativement les performances de rendu et la maintenabilité du code.",
+        "Conception et rédaction d'un guide de migration et de déploiement (CI/CD), utilisé comme standard interne pour les futures mises à jour logicielles.",
+        "Montée en compétence rapide via une autoformation intensive pour répondre aux exigences techniques du projet en un temps record."
+      ]
     },
     {
       "name": "Zenconnect",
@@ -16,7 +20,18 @@
       "logo": "/zenconnect.png",
       "start": "Mai 2023",
       "end": "Juin 2023",
-      "description": []
+      "description": [
+        "Développement de scripts d'automatisation pour la sauvegarde sécurisée de fichiers critiques, garantissant l'intégrité des données serveurs.",
+        "Conception d'un générateur de mots de passe complexes suivant les standards de sécurité actuels.",
+        "Gestion et amélioration de la visibilité de contenus sur WordPress, avec une attention particulière portée au SEO et à l'expérience utilisateur."
+      ],
+      "links": [
+        {
+          "name": "Site Web",
+          "href": "https://zencyber.fr",
+          "icon": "globe"
+        }
+      ]
     }
   ]
 }
