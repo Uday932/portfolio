@@ -31,12 +31,33 @@
       "tags": [
         "C#",
         "WinForms",
-        "SQL Server"
+        "SQL Server",
+        "LINQ"
       ],
       "links": [
         {
           "name": "Github",
           "href": "https://github.com/Uday932/gsbRapports",
+          "icon": "github"
+        }
+      ]
+    }
+    ,
+    {
+      "name": "Application de gestion des frais en PHP avec Laravel",
+      "description": "Une application de bureau pour la gestion des frais, incluant des fonctionnalités d'ajout, modification et suppression de frais. L'application utilise une base de données MySQL.",
+      "image": "/gsb.png",
+      "tags": [
+        "PHP",
+        "Laravel",
+        "Composer",
+        "MySQL",
+        "CRUD"
+      ],
+      "links": [
+        {
+          "name": "Github",
+          "href": "https://github.com/Uday932/gsbLaravel",
           "icon": "github"
         }
       ]

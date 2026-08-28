@@ -32,12 +32,38 @@
       "tags": [
         "C#",
         "WinForms",
-        "SQL Server"
+        "SQL Server",
+        "LINQ"
       ],
       "links": [
         {
           "name": "Github",
           "href": "https://github.com/Uday932/gsbRapports",
+          "icon": "github"
+        },
+        {
+          "name": "Project report",
+          "href": "/projet_GSB3.pdf",
+          "icon": "file-text"
+        } 
+      ]
+    }
+    ,
+    {
+      "name": "Expense management application in PHP with Laravel",
+      "description": "A desktop application for managing expenses, including features like adding, editing, and deleting expenses, as well as tracking expense schedules. The application uses a MySQL database for data storage.",
+      "image": "/gsb.png",
+      "tags": [
+        "PHP",
+        "Laravel",
+        "Composer",
+        "MySQL",
+        "CRUD"
+      ],
+      "links": [
+        {
+          "name": "Github",
+          "href": "https://github.com/Uday932/gsbLaravel",
           "icon": "github"
         },
         {
